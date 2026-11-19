@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbd9a0"/>
+      <stop offset="1" stop-color="#fff3d6"/>
+    </linearGradient>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c6b4a"/>
+      <stop offset="0.45" stop-color="#2f9a5c"/>
+      <stop offset="0.75" stop-color="#b98a2c"/>
+      <stop offset="1" stop-color="#1f5fa6"/>
+    </linearGradient>
+    <linearGradient id="featherG" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#5d6f82"/>
+      <stop offset="1" stop-color="#93a5b8"/>
+    </linearGradient>
+    <pattern id="scales" width="20" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0,0 Q10,13 20,0" fill="none" stroke="#0b3323" stroke-width="1.6" opacity="0.55"/>
+      <path d="M-10,7 Q0,20 10,7 M10,7 Q20,20 30,7" fill="none" stroke="#f3d27a" stroke-width="1" opacity="0.35"/>
+    </pattern>
+    <pattern id="stripes" width="40" height="10" patternUnits="userSpaceOnUse">
+      <rect width="20" height="10" fill="#e63946"/>
+      <rect x="20" width="20" height="10" fill="#fff8e7"/>
+    </pattern>
+    <!-- tail feather pointing left from origin -->
+    <g id="feather">
+      <path d="M0,0 C-40,-13 -110,-19 -150,-15 Q-168,0 -150,15 C-110,19 -40,13 0,0 Z" fill="url(#featherG)" stroke="#3c4a59" stroke-width="1.5"/>
+      <path d="M-40,-9 L-40,9 M-60,-12 L-60,12 M-80,-14 L-80,14 M-98,-15 L-98,15" stroke="#3c4a59" stroke-width="2" opacity="0.5"/>
+      <path d="M0,0 L-150,0" stroke="#e9eef3" stroke-width="1.2" opacity="0.7"/>
+      <path d="M-143,-15.5 L-150,-15 Q-168,0 -150,15 L-143,15.5 Q-150,0 -143,-15.5 Z" fill="#f0b429" stroke="#a86b12" stroke-width="1"/>
+      <ellipse cx="-125" cy="0" rx="14" ry="12" fill="#c06a1e"/>
+      <ellipse cx="-125" cy="0" rx="11" ry="9.5" fill="#1a56c4"/>
+      <ellipse cx="-125" cy="0" rx="6.5" ry="5.5" fill="#35c0c9"/>
+      <ellipse cx="-125" cy="0" rx="3" ry="2.6" fill="#0d1b3d"/>
+    </g>
+    <g id="spokes" stroke="#9aa0a6" stroke-width="1.6">
+      <line x1="-72" y1="0" x2="72" y2="0"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(22.5)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(45)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(67.5)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(90)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(112.5)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(135)"/>
+      <line x1="-72" y1="0" x2="72" y2="0" transform="rotate(157.5)"/>
+    </g>
+    <g id="wheel">
+      <circle r="78" fill="none" stroke="#1d1d1f" stroke-width="9"/>
+      <circle r="71" fill="none" stroke="#c9ced3" stroke-width="3"/>
+      <use xlink:href="#spokes" href="#spokes"/>
+      <circle r="8" fill="#555b61" stroke="#1d1d1f" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="90" cy="130" r="42" fill="#ffd166" opacity="0.9"/>
+
+  <!-- colonial wall -->
+  <rect x="0" y="330" width="800" height="150" fill="#f2b632"/>
+  <rect x="0" y="322" width="800" height="10" fill="#fff8e7"/>
+  <rect x="0" y="452" width="800" height="28" fill="#fff8e7"/>
+  <!-- doorway -->
+  <path d="M40,480 L40,372 Q80,340 120,372 L120,480 Z" fill="#fff8e7"/>
+  <path d="M50,480 L50,378 Q80,353 110,378 L110,480 Z" fill="#2a7f7b"/>
+  <line x1="80" y1="358" x2="80" y2="480" stroke="#1d5a57" stroke-width="2"/>
+
+  <!-- street -->
+  <rect x="0" y="480" width="800" height="120" fill="#b9a58c"/>
+  <rect x="0" y="480" width="800" height="8" fill="#9a8770"/>
+  <g fill="none" stroke="#9a8770" stroke-width="2" opacity="0.6">
+    <path d="M30,540 h60 M150,565 h70 M320,548 h50 M470,572 h80 M640,545 h60 M720,580 h50 M240,585 h40"/>
+  </g>
+
+  <!-- papel picado -->
+  <path d="M0,40 Q400,80 800,40" fill="none" stroke="#6b4b2a" stroke-width="2"/>
+  <g stroke="#ffffff" stroke-width="0.8">
+    <rect x="35" y="45" width="50" height="34" fill="#e63946"/>
+    <rect x="115" y="51" width="50" height="34" fill="#2a9d8f"/>
+    <rect x="195" y="56" width="50" height="34" fill="#f77f00"/>
+    <rect x="275" y="58" width="50" height="34" fill="#c2185b"/>
+    <rect x="355" y="60" width="50" height="34" fill="#3a86ff"/>
+    <rect x="435" y="59" width="50" height="34" fill="#8ac926"/>
+    <rect x="515" y="57" width="50" height="34" fill="#e63946"/>
+    <rect x="595" y="54" width="50" height="34" fill="#7b2cbf"/>
+    <rect x="675" y="49" width="50" height="34" fill="#f77f00"/>
+  </g>
+  <g fill="#fff3d6" opacity="0.85">
+    <circle cx="60" cy="62" r="6"/><circle cx="140" cy="68" r="6"/><circle cx="220" cy="73" r="6"/>
+    <circle cx="300" cy="75" r="6"/><circle cx="380" cy="77" r="6"/><circle cx="460" cy="76" r="6"/>
+    <circle cx="540" cy="74" r="6"/><circle cx="620" cy="71" r="6"/><circle cx="700" cy="66" r="6"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="400" cy="504" rx="340" ry="12" fill="#5c4a36" opacity="0.35"/>
+
+  <!-- far front wheel -->
+  <g transform="translate(603,414)" opacity="0.75"><use xlink:href="#wheel" href="#wheel"/></g>
+
+  <!-- far crank, pedal and far leg -->
+  <line x1="335" y1="432" x2="322" y2="402" stroke="#4a4f55" stroke-width="5" stroke-linecap="round"/>
+  <rect x="306" y="396" width="34" height="7" rx="2" fill="#2b2b2e"/>
+  <polyline points="315,288 350,345 325,393" fill="none" stroke="#a52c44" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M325,393 L343,395 M325,393 L340,388 M325,393 L312,394" stroke="#a52c44" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- canopy poles -->
+  <line x1="470" y1="305" x2="470" y2="148" stroke="#6d4c2f" stroke-width="5"/>
+  <line x1="700" y1="305" x2="700" y2="148" stroke="#6d4c2f" stroke-width="5"/>
+
+  <!-- seat backrest, cushion and cargo -->
+  <rect x="462" y="248" width="16" height="60" rx="5" fill="#c2185b" stroke="#7d0f3a" stroke-width="2"/>
+  <rect x="476" y="293" width="218" height="14" rx="5" fill="#c2185b" stroke="#7d0f3a" stroke-width="2"/>
+  <!-- basket of oranges -->
+  <g>
+    <circle cx="572" cy="262" r="11" fill="#f77f00"/><circle cx="594" cy="256" r="11" fill="#ff9f1c"/>
+    <circle cx="616" cy="258" r="11" fill="#f77f00"/><circle cx="636" cy="263" r="11" fill="#ff9f1c"/>
+    <circle cx="584" cy="267" r="11" fill="#ff9f1c"/><circle cx="606" cy="267" r="11" fill="#f77f00"/><circle cx="626" cy="268" r="11" fill="#ff9f1c"/>
+    <path d="M555,268 L655,268 L645,296 L565,296 Z" fill="#c8963e" stroke="#7a5520" stroke-width="2"/>
+    <path d="M560,277 H650 M563,286 H647 M575,268 L580,296 M595,268 L597,296 M615,268 L613,296 M635,268 L630,296" stroke="#7a5520" stroke-width="1.5" fill="none"/>
+  </g>
+  <!-- sack -->
+  <path d="M500,295 C492,270 500,252 515,250 C522,244 530,244 534,250 C548,254 552,275 545,295 Z" fill="#e8dcc0" stroke="#8b7a55" stroke-width="2"/>
+  <path d="M512,251 Q524,257 536,251" fill="none" stroke="#8b7a55" stroke-width="2"/>
+
+  <!-- cargo box -->
+  <rect x="460" y="305" width="250" height="80" rx="6" fill="#18a999" stroke="#0d5f57" stroke-width="3"/>
+  <rect x="460" y="305" width="250" height="9" fill="#ffd166" stroke="#0d5f57" stroke-width="2"/>
+  <rect x="460" y="374" width="250" height="11" fill="#e63946" stroke="#0d5f57" stroke-width="2"/>
+  <text x="585" y="337" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="19" fill="#fff8e7" letter-spacing="2">EL PAVO · MÉRIDA</text>
+  <!-- front bumper -->
+  <path d="M710,330 Q730,345 710,362" fill="none" stroke="#6d4c2f" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- canopy -->
+  <path d="M445,150 Q585,108 725,150 Z" fill="#e63946" stroke="#8f1d27" stroke-width="2"/>
+  <path d="M500,136 Q585,116 670,136" fill="none" stroke="#fff8e7" stroke-width="5" opacity="0.8"/>
+  <rect x="445" y="150" width="280" height="12" fill="url(#stripes)" stroke="#8f1d27" stroke-width="1.5"/>
+  <path d="M445,162 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 Z" fill="#ffd166" stroke="#b8860b" stroke-width="1.2"/>
+
+  <!-- handlebar post -->
+  <line x1="463" y1="318" x2="450" y2="262" stroke="#8d9299" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- frame -->
+  <g stroke="#d62828" stroke-width="7" stroke-linecap="round" fill="none">
+    <line x1="200" y1="420" x2="335" y2="432"/>
+    <line x1="200" y1="420" x2="302" y2="312"/>
+    <line x1="335" y1="432" x2="300" y2="298"/>
+    <line x1="303" y1="318" x2="460" y2="345"/>
+    <line x1="335" y1="432" x2="460" y2="376"/>
+  </g>
+
+  <!-- chain -->
+  <g stroke="#3a3a3d" stroke-width="2.5" fill="none">
+    <line x1="200" y1="409" x2="335" y2="410"/>
+    <line x1="200" y1="431" x2="335" y2="454"/>
+  </g>
+
+  <!-- wheels -->
+  <g transform="translate(200,420)"><use xlink:href="#wheel" href="#wheel"/></g>
+  <g transform="translate(585,420)"><use xlink:href="#wheel" href="#wheel"/></g>
+  <circle cx="200" cy="420" r="11" fill="none" stroke="#3a3a3d" stroke-width="3"/>
+
+  <!-- chainring and near crank -->
+  <circle cx="335" cy="432" r="22" fill="#d9dde1" stroke="#3a3a3d" stroke-width="3"/>
+  <circle cx="335" cy="432" r="13" fill="none" stroke="#3a3a3d" stroke-width="2"/>
+  <line x1="335" y1="432" x2="348" y2="462" stroke="#2b2b2e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="335" cy="432" r="5" fill="#2b2b2e"/>
+  <rect x="330" y="460" width="38" height="8" rx="2" fill="#2b2b2e"/>
+
+  <!-- tail fan -->
+  <g transform="translate(248,242)">
+    <use xlink:href="#feather" href="#feather" transform="rotate(-14)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(-3)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(8)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(19)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(30)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(41)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(52)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(63)"/>
+    <use xlink:href="#feather" href="#feather" transform="rotate(74)"/>
+  </g>
+  <!-- tail coverts -->
+  <g transform="translate(248,242)" fill="#2f9a5c" stroke="#0b3323" stroke-width="1.2">
+    <ellipse cx="-38" cy="0" rx="34" ry="11" transform="rotate(-8)"/>
+    <ellipse cx="-38" cy="0" rx="34" ry="11" transform="rotate(14)"/>
+    <ellipse cx="-38" cy="0" rx="34" ry="11" transform="rotate(36)"/>
+    <ellipse cx="-38" cy="0" rx="34" ry="11" transform="rotate(58)"/>
+  </g>
+  <g transform="translate(248,242)" fill="#f0b429">
+    <circle cx="-66" cy="0" r="5" transform="rotate(-8)"/>
+    <circle cx="-66" cy="0" r="5" transform="rotate(14)"/>
+    <circle cx="-66" cy="0" r="5" transform="rotate(36)"/>
+    <circle cx="-66" cy="0" r="5" transform="rotate(58)"/>
+  </g>
+
+  <!-- saddle -->
+  <path d="M262,292 Q296,282 338,292 Q340,302 326,302 L272,302 Q260,300 262,292 Z" fill="#2b2b2e"/>
+
+  <!-- turkey body -->
+  <g transform="rotate(-12 295 238)">
+    <ellipse cx="295" cy="238" rx="80" ry="56" fill="url(#bodyG)" stroke="#0b3323" stroke-width="2.5"/>
+    <ellipse cx="295" cy="238" rx="80" ry="56" fill="url(#scales)"/>
+  </g>
+
+  <!-- lower neck (feathered) -->
+  <path d="M322,212 C348,196 358,176 366,148 L386,158 C386,190 382,218 366,244 Z" fill="#23805a" stroke="#0b3323" stroke-width="2"/>
+  <path d="M340,205 q8,8 16,0 M350,188 q8,8 16,0 M356,172 q8,8 16,0 M348,222 q8,8 16,0" fill="none" stroke="#0b3323" stroke-width="1.5" opacity="0.6"/>
+  <!-- upper neck (bare blue) -->
+  <path d="M374,166 C374,150 378,138 383,124" fill="none" stroke="#2f7fd6" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- head -->
+  <ellipse cx="380" cy="92" rx="10" ry="8" fill="#2a6fc0" stroke="#184a85" stroke-width="1.5"/>
+  <circle cx="385" cy="112" r="19" fill="#2f7fd6" stroke="#184a85" stroke-width="2"/>
+  <!-- beak -->
+  <path d="M401,106 L424,117 L401,123 Z" fill="#e9d8a6" stroke="#6b5a2a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M402,116 L420,117" stroke="#6b5a2a" stroke-width="1.2"/>
+  <!-- snood -->
+  <path d="M398,101 Q408,103 407,114 Q402,112 398,101 Z" fill="#2a6fc0" stroke="#184a85" stroke-width="1"/>
+  <!-- orange nodules -->
+  <g fill="#ff7a1a" stroke="#c44a00" stroke-width="0.8">
+    <circle cx="376" cy="88" r="3"/><circle cx="383" cy="86" r="2.8"/><circle cx="380" cy="94" r="2.5"/>
+    <circle cx="371" cy="104" r="3"/><circle cx="369" cy="115" r="3"/><circle cx="374" cy="124" r="3"/>
+    <circle cx="384" cy="129" r="3"/><circle cx="394" cy="126" r="2.6"/><circle cx="379" cy="100" r="2.5"/>
+    <circle cx="373" cy="140" r="2.8"/><circle cx="381" cy="150" r="2.8"/><circle cx="372" cy="156" r="2.5"/>
+  </g>
+  <!-- eye -->
+  <circle cx="391" cy="108" r="6.5" fill="#e63946"/>
+  <circle cx="391" cy="108" r="4.6" fill="#ffffff"/>
+  <circle cx="392" cy="108" r="2.6" fill="#111"/>
+  <circle cx="393" cy="107" r="0.9" fill="#fff"/>
+
+  <!-- wing reaching to handlebar -->
+  <path d="M278,218 C320,196 395,232 452,254 L458,266 C425,280 345,292 292,272 C272,262 266,232 278,218 Z" fill="#c46a1f" stroke="#6e3608" stroke-width="2.5"/>
+  <path d="M292,272 C345,292 425,280 458,266 L452,258 C415,266 345,272 296,256 Z" fill="#fdfaf0" stroke="#6e3608" stroke-width="1.5"/>
+  <path d="M320,264 l-3,13 M345,269 l-2,14 M370,270 l-1,14 M395,269 l1,13 M420,265 l2,11 M440,261 l3,9" stroke="#3b2a1a" stroke-width="2.5"/>
+  <path d="M300,228 q14,-8 28,2 M330,232 q14,-6 28,4 M362,240 q13,-4 26,5 M394,248 q12,-3 22,5" fill="none" stroke="#f0b429" stroke-width="2.5" opacity="0.9"/>
+  <!-- feather "fingers" on grip -->
+  <path d="M446,252 q14,-2 14,8 q0,10 -12,10" fill="#8a4513" stroke="#6e3608" stroke-width="2"/>
+  <circle cx="450" cy="262" r="6" fill="#2b2b2e"/>
+
+  <!-- near leg -->
+  <ellipse cx="324" cy="284" rx="27" ry="21" fill="#1c6b4a" stroke="#0b3323" stroke-width="2"/>
+  <path d="M308,284 q8,8 16,0 M322,292 q8,8 16,0" fill="none" stroke="#0b3323" stroke-width="1.4" opacity="0.6"/>
+  <polyline points="334,300 372,372 350,455" fill="none" stroke="#e0445a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350,456 L374,459 M350,456 L371,450 M350,456 L333,458" stroke="#e0445a" stroke-width="5" stroke-linecap="round"/>
+  <!-- spur -->
+  <path d="M362,405 L350,400" stroke="#e0445a" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- motion lines -->
+  <g stroke="#8a7458" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <line x1="40" y1="400" x2="95" y2="400"/>
+    <line x1="20" y1="430" x2="100" y2="430"/>
+    <line x1="50" y1="460" x2="105" y2="460"/>
+  </g>
+</svg>

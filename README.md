@@ -33,6 +33,15 @@ This project is a **Yucatán version of that idea**. It started as the pelican (
 >
 > *"Generate an SVG of an ocellated turkey riding a Yucatecan triciclo."*
 
+### Blind test results
+
+[**Fable 5.2**](extras/fable-5-2) — the SVG prompt plus two Blender variants (a still and a looping
+animation), each written in one shot without seeing a render.
+
+| SVG | Blender still | Blender animation |
+|---|---|---|
+| ![Fable 5.2 SVG](extras/fable-5-2/turkey_triciclo_svg.png) | ![Fable 5.2 3D still](extras/fable-5-2/turkey_3d.png) | ![Fable 5.2 animation](extras/fable-5-2/turkey_ride.gif) |
+
 ### Why this turkey?
 
 It scores well on what makes the pelican a good test subject: anatomy that fights the vehicle
